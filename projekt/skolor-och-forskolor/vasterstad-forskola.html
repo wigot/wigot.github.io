@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Västerstad Förskola - Wigot Konsult AB</title>
+	<link rel="canonical" href="https://www.wigot.se/projekt/skolor-och-forskolor/vasterstad-forskola">
+	<meta property="og:url" content="https://www.wigot.se/projekt/skolor-och-forskolor/vasterstad-forskola" />
+	<meta property="og:locale" content="sv_SE" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Västerstad Förskola" />
+	
+	<meta property="og:site_name" content="Wigot Konsult AB" />
+	<link rel='stylesheet' id='font-awesome-css'  href='/content/plugins/ultra-content-elements/fonts/font-awesome.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='swm-global-css'  href='/content/plugins/ultra-content-elements/css/global.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='swm-shortcodes-css'  href='/content/plugins/ultra-content-elements/css/shortcodes.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='swm-widgets-css'  href='/content/plugins/ultra-content-elements/css/widgets.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='font-icons-css'  href='/content/themes/thinker/fonts/font-awesome.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='main-css-css'  href='/content/themes/thinker/style.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='google-font-heading-css'  href='https://fonts.googleapis.com/css?family=Arimo%3A300%2C400%2C400italic%2C500%2C600%2C700%2C700italic&amp;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese' type='text/css' media='all' />
+	<link rel='stylesheet' id='prettyphoto-css'  href='/content/themes/thinker/css/prettyphoto.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='screen-css'  href='/content/themes/thinker/screen.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='responsive-css'  href='/content/themes/thinker/responsive.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='retina-css'  href='/content/themes/thinker/retina.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='custom-css'  href='/content/themes/thinker/custom.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='rs-plugin-settings-css'  href='/content/plugins/revslider/rs-plugin/css/settings.css' type='text/css' media='all' />
+	<style id='rs-plugin-settings-inline-css' type='text/css'>
+	.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+	</style>
+	<link rel='stylesheet' id='child-theme-style-css'  href='/content/themes/thinker-child-theme/child-theme-style.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='plugin-fix-css'  href='/content/themes/thinker/plugin-fix.css' type='text/css' media='all' />
+	<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js'></script>
+	<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+	<script type='text/javascript' src='/content/themes/thinker/js/modernizer.js'></script>
+	<script type='text/javascript' src='/content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min.js'></script>
+	<script type='text/javascript' src='/content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			// CUSTOM AJAX CONTENT LOADING FUNCTION
+			var ajaxRevslider = function(obj) {
+			
+				// obj.type : Post Type
+				// obj.id : ID of Content to Load
+				// obj.aspectratio : The Aspect Ratio of the Container / Media
+				// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+				
+				var content = "";
+
+				data = {};
+				
+				data.action = 'revslider_ajax_call_front';
+				data.client_action = 'get_slider_html';
+				data.token = 'ed959203f9';
+				data.type = obj.type;
+				data.id = obj.id;
+				data.aspectratio = obj.aspectratio;
+				
+				// SYNC AJAX REQUEST
+				jQuery.ajax({
+					type:"post",
+					url:"https://www.wigot.se/wp-admin/admin-ajax.php",
+					dataType: 'json',
+					data:data,
+					async:false,
+					success: function(ret, textStatus, XMLHttpRequest) {
+						if(ret.success == true)
+							content = ret.data;								
+					},
+					error: function(e) {
+						console.log(e);
+					}
+				});
+				
+				 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+				 return content;						 
+			};
+			
+			// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+			var ajaxRemoveRevslider = function(obj) {
+				return jQuery(obj.selector+" .rev_slider").revkill();
+			};
+
+			// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+			var extendessential = setInterval(function() {
+				if (jQuery.fn.tpessential != undefined) {
+					clearInterval(extendessential);
+					if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+						jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+						// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+						// func: the Function Name which is Called once the Item with the Post Type has been clicked
+						// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+						// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+					}
+				}
+			},30);
+		});
+	</script>
+	<style type="text/css">#intro_header { background:transparent ; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }.tp-rightarrow.default,.tp-leftarrow.default { text-align: center; font-size: 30px; }
+	.tp-rightarrow.default,.tp-leftarrow.default {	 width:40px; height:41px; border-radius: 0;	display:block; }
+	.tp-rightarrow.default { right:0; margin:0; background: rgba(0,0,0,0.6) url(content/themes/thinker-child-theme/images/backgrounds/arrow-right.png) no-repeat 12px 12px; border-radius: 3px 0 0 3px; }
+	.tp-leftarrow.default { left:0; margin:0; background: rgba(0,0,0,0.6) url(content/themes/thinker-child-theme/images/backgrounds/arrow-left.png) no-repeat 10px 12px; border-radius: 0 3px 3px 0; }
+	.tp-bullets.simplebullets.round-old .bullet { cursor:pointer; position:relative;	display:inline; background: rgba(0,0,0,0.36);	width:10px;	height:10px;  margin-right:6px; float:left; margin-top:0px; border-radius: 100px;}
+	.tp-bullets.simplebullets.round-old .bullet.selected,.tp-bullets.simplebullets.round-old .bullet:hover {  background: rgba(0,0,0,0.7); margin-top:0; display:inline; float:left;}
+	.tp-bullets.simplebullets.round-old .bullet.last {	clear:none; } </style><!--[if IE 8]><style type="text/css" media="screen"> @import "https://www.wigot.se/content/themes/thinker/css/ie8.css";</style><![endif]--><!--[if IE 9]><style type="text/css" media="screen"> @import "https://www.wigot.se/content/themes/thinker/css/ie9.css";</style><![endif]-->		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+</head>
+
+
+<body class="home page page-template page-template-template-fullwidth page-template-template-fullwidth-php swm_fixed_layout">
+    <section id="logo_header" class="swm_box_shadow">
+	<div id="logo_header_wrap">
+		<div class="logo">
+			<a href="/">
+				<img src="/content/uploads/WLoggaMedAAA-340.jpg" width="340" alt="Wigot Konsult AB" />
+			</a>
+		</div>
+        
+		<nav class="top-menu">
+			<ul id="nav" class="sf-menu">
+				<li class="menu-item menu-item-type-post_type menu-item-object-page page_item"><a href="/">Välkommen<small></small></a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page page_item"><a href="/vara-tjanster/">Våra tjänster<small></small></a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item">
+					<a href="/projekt/">Projekt<small></small></a>
+					<ul class="sub-menu">
+                        
+                        
+                        
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+							<a href="/projekt/bostader/">Bostäder<small></small></a>
+							<ul class="sub-menu">
+                            
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/bostader/kv-jagaren-lund">Kv Jägaren, Lund<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/bostader/kv-snofoget-klostergarden-lund">Kv Snöfoget, Klostergården, Lund<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/bostader/kv-varloken-eslov">Kv Vårlöken, Eslöv<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/bostader/villa-friman-vellinge">Villa Friman, Vellinge<small></small></a></li>
+                            
+							</ul>
+						</li>
+                        
+                        
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+							<a href="/projekt/idrottsanlaggningar/">Idrottsanläggningar<small></small></a>
+							<ul class="sub-menu">
+                            
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/idrottsanlaggningar/harlosa-idrottshall">Harlösa Idrottshall<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/idrottsanlaggningar/genarps-idrottshall">Genarps Idrottshall<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/idrottsanlaggningar/tolvakers-idrottsplats-loddekopinge">Tolvåkers Idrottsplats, Löddeköpinge<small></small></a></li>
+                            
+							</ul>
+						</li>
+                        
+                        
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+							<a href="/projekt/industribyggnader/">Industribyggnader<small></small></a>
+							<ul class="sub-menu">
+                            
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/industribyggnader/kv-holkyxan-malmo">Kv Holkyxan, Malmö<small></small></a></li>
+                            
+							</ul>
+						</li>
+                        
+                        
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+							<a href="/projekt/kontor/">Kontor<small></small></a>
+							<ul class="sub-menu">
+                            
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/kontor/byggnad-26-regionfastigheters-kontor-lund">Byggnad 26, Regionfastigheters kontor, Lund<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/kontor/kv-ljusaret-kontor-till-lunds-energi-lund">Kv Ljusåret, Lunds Energi, Lund<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/kontor/kv-porten-kavlinge">Kv Porten, Kävlinge<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/kontor/kv-ventilen-malmo">Kv Ventilen, Malmö<small></small></a></li>
+                            
+							</ul>
+						</li>
+                        
+                        
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item">
+							<a href="/projekt/skolor-och-forskolor/">Skolor och förskolor<small></small></a>
+							<ul class="sub-menu">
+                            
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/skolor-och-forskolor/jarnaakraskolan-lund">Järnaåkraskolan, Lund<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/skolor-och-forskolor/kv-godsvagnen-stangby-forskola">Kv Godsvagnen, Stångby Förskola<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/skolor-och-forskolor/hackebergaskolan-nybyggnaden-genarp">Häckebergaskolan, Genarp<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/skolor-och-forskolor/montesorriskolan-barseback">Montesorriskolan, Barsebäck<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/skolor-och-forskolor/torna-hallestad-skola">Torna Hällestad skola<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item"><a href="/projekt/skolor-och-forskolor/vasterstad-forskola">Västerstad Förskola<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/skolor-och-forskolor/tolvakerskolans-kok-loddekopinge">Tolvåkerskolans kök, Löddeköpinge<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/skolor-och-forskolor/olyckeskolan-loberod">Ölyckeskolan, Löberöd<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/skolor-och-forskolor/vipans-gymnasieskola-lund">Vipans Gymnasieskola, Lund<small></small></a></li>
+                            
+							</ul>
+						</li>
+                        
+                        
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+							<a href="/projekt/universitets-och-forskningslokaler/">Universitets- och forskningslokaler<small></small></a>
+							<ul class="sub-menu">
+                            
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/universitets-och-forskningslokaler/m17612-lu-service-lund">M17:612 LU Service, Lund<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/universitets-och-forskningslokaler/m17613-lu-service-lund">M17:613 LU Service, Lund<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/universitets-och-forskningslokaler/m18111-maskinteknik-lund">M18:111 Maskinteknik, Lund<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/universitets-och-forskningslokaler/navet-alnarp">Navet, Alnarp<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/universitets-och-forskningslokaler/handikapp-atgarder">Handikapp-åtgärder<small></small></a></li>
+                            
+							</ul>
+						</li>
+                        
+                        
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+							<a href="/projekt/vardinrattningar/">Vårdinrättningar<small></small></a>
+							<ul class="sub-menu">
+                            
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/vardinrattningar/sus-i-malmo-entre-71-till-byggnad-38-och-64">SUS i Malmö, Entré 71, Byggnad 38 & 64<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/vardinrattningar/sus-i-lund-forlossningen-ombyggnad">SUS i Lund, Förlossningen<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/vardinrattningar/sus-i-lund-rontgenavdelningen-ombyggnad">SUS i Lund, Röntgenavdelningen<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/vardinrattningar/angelholms-sjukhus-byggnad-08-ombyggnad-op">Ängelholms Sjukhus, Byggnad 08<small></small></a></li>
+                            
+							</ul>
+						</li>
+                        
+                        
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+							<a href="/projekt/aldreboende-gruppboende-etc/">Äldreboende, gruppboende etc<small></small></a>
+							<ul class="sub-menu">
+                            
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/aldreboende-gruppboende-etc/kv-bardisanen-lund-gruppboende">Kv Bardisanen, Lund<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/aldreboende-gruppboende-etc/kv-drottning-margareta-lund-gruppboende">Kv Drottning Margareta, Lund<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/aldreboende-gruppboende-etc/kv-solisten-lund-ungdomsboende">Kv Solisten, Lund<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/aldreboende-gruppboende-etc/papegojelyckan-lund-aldreboende">Papegojelyckan, Lund<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/aldreboende-gruppboende-etc/pilegarden-staffanstorp-aldreboende">Pilegården, Staffanstorp<small></small></a></li>
+                            
+							</ul>
+						</li>
+                        
+                        
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+							<a href="/projekt/ovrigt/">Övrigt<small></small></a>
+							<ul class="sub-menu">
+                            
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/ovrigt/stadsparkscafeet-lund">Stadsparkscaféet, Lund<small></small></a></li>
+                            
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projekt/ovrigt/barsebacks-kyrka">Barsebäcks Kyrka<small></small></a></li>
+                            
+							</ul>
+						</li>
+                        
+					</ul>
+				</li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+					<a href="/om-oss/">Företaget<small></small></a>
+					<ul class="sub-menu">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/om-oss/affarside">Vår Affärsidé<small></small></a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/om-oss/kvalitets-och-miljopolicy">Kvalitets- &#038; Miljöpolicy<small></small></a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/om-oss/kvalitets-och-miljoledningssystem">Kvalitets- &#038; Miljöledningssystem<small></small></a></li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/kontakta-oss/">Kontakta oss<small></small></a></li>
+			</ul>
+		</nav>
+		<div class="clear"></div>
+	</div>
+</section>
+
+    <div class="page-content">
+        <div class="wrapper">
+            <section id="container" class="swm_box_shadow">
+                <div id="content">
+                    <div class="swm_fancy_box round5">
+                        <div class="title_text" data-bg-color="#fdd404" data-font-color="#000000">Västerstad Förskola</div>
+                        <div class="fancy_text">
+                            <p>Byggår&#58; 2006-2007<br />
+Beställare&#58; Hörby Kommun<br />
+Omfattning&#58; Nybyggnad av förskola.<br />
+Vårt uppdrag&#58; Arkitekt
+</p>
+                            
+                            
+                        </div>
+                    </div>
+                    <article class="projects_style3 column_4 pf_sort swm_custom_gallery">
+                        
+                        <div class="projects_style3_box pf_isotope">
+                            <div class="thumb_img ">
+                                <div class="swm_projects_style3_text_wrap">
+                                    <div class="swm_projects_style3_text">
+                                        <div class="swm_projects_style3_title_section">
+                                            <div class="project_title" data-font-size="14" data-font-color="#000">Översiktsbild</div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="projects_style3_hover_icon" data-font-color="#000">
+                                    <a href='/content/uploads/Vaesterstad_Foerskola_01_Oeversikt.jpg' data-rel="prettyPhoto[mygallery1]" title="Översiktsbild" data-font-color="#000"><i class="icon-picture"></i></a>
+                                </div>
+                                <a href='#' title=''><img src='/content/uploads/Vaesterstad_Foerskola_01_Oeversikt-401x235.jpg' alt='Översiktsbild'/></a>
+                            </div>
+                        </div>
+                        
+                        <div class="projects_style3_box pf_isotope">
+                            <div class="thumb_img ">
+                                <div class="swm_projects_style3_text_wrap">
+                                    <div class="swm_projects_style3_text">
+                                        <div class="swm_projects_style3_title_section">
+                                            <div class="project_title" data-font-size="14" data-font-color="#000">Nybyggnad med passage mot bef byggnad</div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="projects_style3_hover_icon" data-font-color="#000">
+                                    <a href='/content/uploads/Vaesterstad_Foerskola_02_Nyggnad_med-passage_mot_bef.jpg' data-rel="prettyPhoto[mygallery1]" title="Nybyggnad med passage mot bef byggnad" data-font-color="#000"><i class="icon-picture"></i></a>
+                                </div>
+                                <a href='#' title=''><img src='/content/uploads/Vaesterstad_Foerskola_02_Nyggnad_med-passage_mot_bef-401x235.jpg' alt='Nybyggnad med passage mot bef byggnad'/></a>
+                            </div>
+                        </div>
+                        
+                        <div class="projects_style3_box pf_isotope">
+                            <div class="thumb_img ">
+                                <div class="swm_projects_style3_text_wrap">
+                                    <div class="swm_projects_style3_text">
+                                        <div class="swm_projects_style3_title_section">
+                                            <div class="project_title" data-font-size="14" data-font-color="#000">Nybyggnaden sett från landsvägen</div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="projects_style3_hover_icon" data-font-color="#000">
+                                    <a href='/content/uploads/Vaesterstad_Foerskola_03_Nybyggnaden_sett_fraan_vaegen.jpg' data-rel="prettyPhoto[mygallery1]" title="Nybyggnaden sett från landsvägen" data-font-color="#000"><i class="icon-picture"></i></a>
+                                </div>
+                                <a href='#' title=''><img src='/content/uploads/Vaesterstad_Foerskola_03_Nybyggnaden_sett_fraan_vaegen-401x235.jpg' alt='Nybyggnaden sett från landsvägen'/></a>
+                            </div>
+                        </div>
+                        
+                        <div class="projects_style3_box pf_isotope">
+                            <div class="thumb_img ">
+                                <div class="swm_projects_style3_text_wrap">
+                                    <div class="swm_projects_style3_text">
+                                        <div class="swm_projects_style3_title_section">
+                                            <div class="project_title" data-font-size="14" data-font-color="#000">Närbild av gavel</div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="projects_style3_hover_icon" data-font-color="#000">
+                                    <a href='/content/uploads/Vaesterstad_Foerskola_04_Gavel_Naerbild.jpg' data-rel="prettyPhoto[mygallery1]" title="Närbild av gavel" data-font-color="#000"><i class="icon-picture"></i></a>
+                                </div>
+                                <a href='#' title=''><img src='/content/uploads/Vaesterstad_Foerskola_04_Gavel_Naerbild-401x235.jpg' alt='Närbild av gavel'/></a>
+                            </div>
+                        </div>
+                        
+                        <div class="projects_style3_box pf_isotope">
+                            <div class="thumb_img ">
+                                <div class="swm_projects_style3_text_wrap">
+                                    <div class="swm_projects_style3_text">
+                                        <div class="swm_projects_style3_title_section">
+                                            <div class="project_title" data-font-size="14" data-font-color="#000">Passagen mot bef byggnad, närbild</div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="projects_style3_hover_icon" data-font-color="#000">
+                                    <a href='/content/uploads/Vaesterstad_Foerskola_05_Passagen_mot_bef_Naerbild.jpg' data-rel="prettyPhoto[mygallery1]" title="Passagen mot bef byggnad, närbild" data-font-color="#000"><i class="icon-picture"></i></a>
+                                </div>
+                                <a href='#' title=''><img src='/content/uploads/Vaesterstad_Foerskola_05_Passagen_mot_bef_Naerbild-401x235.jpg' alt='Passagen mot bef byggnad, närbild'/></a>
+                            </div>
+                        </div>
+                        
+                        <div class="projects_style3_box pf_isotope">
+                            <div class="thumb_img ">
+                                <div class="swm_projects_style3_text_wrap">
+                                    <div class="swm_projects_style3_text">
+                                        <div class="swm_projects_style3_title_section">
+                                            <div class="project_title" data-font-size="14" data-font-color="#000">Den gamla rivna byggnaden</div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="projects_style3_hover_icon" data-font-color="#000">
+                                    <a href='/content/uploads/Vaesterstad_Foerskola_06_Den_gamla_rivna_byggnaden.jpg' data-rel="prettyPhoto[mygallery1]" title="Den gamla rivna byggnaden" data-font-color="#000"><i class="icon-picture"></i></a>
+                                </div>
+                                <a href='#' title=''><img src='/content/uploads/Vaesterstad_Foerskola_06_Den_gamla_rivna_byggnaden-401x235.jpg' alt='Den gamla rivna byggnaden'/></a>
+                            </div>
+                        </div>
+                        
+                        <div class="clear"></div>
+                    </article>
+                    <div class="clear"></div>
+                    <a href="/projekt/skolor-och-forskolor" class="swm_button  round small shadow_dark skin_color" data-bg-color="#fdd404" data-font-color="#000"
+                    target="_self"> <i class="icon-chevron-left"></i> Tillbaka till skolor och förskolor</a>
+                    <div class="clear"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <section id="footer_copyright_info">
+		<p>WIGOT KONSULT AB / Annedalsvägen 9, 227 64 Lund / Tel 046-38 51 30 / Fax 046-12 55 27</p>
+</section>	
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-50415617-1']);
+	_gaq.push(['_setDomainName', 'none']);
+	_gaq.push(['_setAllowLinker', true]);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+<div id="topmenu-icon-subtext" data-sub1="" data-sub2="" data-sub3="" data-sub4="" data-sub5="" data-sub6="" data-sub7="" data-sub8="" data-sub9="" data-sub10="" ></div>
+<script type='text/javascript' src='/content/plugins/ultra-content-elements/js/jquery-plugins.js'></script>
+<script type='text/javascript' src='/content/plugins/ultra-content-elements/js/validate.js'></script>
+<script type='text/javascript' src='/content/plugins/ultra-content-elements/js/isotope.js'></script>
+<script type='text/javascript' src='/content/plugins/ultra-content-elements/js/custom-scripts.js'></script>
+<script type='text/javascript' src='/content/themes/thinker/js/jquery-core-plugins.js'></script>
+<script type='text/javascript' src='/content/themes/thinker/js/jquery-plugins.js'></script>
+<script type='text/javascript' src='/content/themes/thinker/js/theme-settings.js'></script>
+<script type='text/javascript' src='/content/themes/thinker/js/portfolio-sortable.js'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js'></script>
+
+</body>
+
+</html>

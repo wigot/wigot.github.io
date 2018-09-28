@@ -1,0 +1,42 @@
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), 
+	only screen and (-moz-min-device-pixel-ratio: 1.5), 
+	only screen and (-o-min-device-pixel-ratio: 3/2), 
+	only screen and (min-device-pixel-ratio: 1.5) {
+
+.theme_social_icons ul li a 				{ background-size: 16px 16px; }
+.theme_social_icons ul li a.tsm_amazon 	{ background: transparent url(images/icons/retina/amazon%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_apple 		{ background: transparent url(images/icons/retina/apple%402x.png) no-repeat 0 0; 			}
+.theme_social_icons ul li a.tsm_applestore { background: transparent url(images/icons/retina/applestore%402x.png) no-repeat 0 0; 	}
+.theme_social_icons ul li a.tsm_blogger 	{ background: transparent url(images/icons/retina/blogger%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_delicious 	{ background: transparent url(images/icons/retina/delicious%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_deviantart { background: transparent url(images/icons/retina/deviantart%402x.png) no-repeat 0 0; 	}
+.theme_social_icons ul li a.tsm_digg 		{ background: transparent url(images/icons/retina/digg%402x.png) no-repeat 0 0; 			}
+.theme_social_icons ul li a.tsm_dribble 	{ background: transparent url(images/icons/retina/dribble%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_dropbox 	{ background: transparent url(images/icons/retina/dropbox%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_facebook 	{ background: transparent url(images/icons/retina/facebook%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_flickr 	{ background: transparent url(images/icons/retina/flickr%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_forrst 	{ background: transparent url(images/icons/retina/forrst%402x.html) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_google 	{ background: transparent url(images/icons/retina/google%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_googleplus { background: transparent url(images/icons/retina/googleplus%402x.png) no-repeat 0 0; 	}
+.theme_social_icons ul li a.tsm_instagram 	{ background: transparent url(images/icons/retina/instagram%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_lastfm 	{ background: transparent url(images/icons/retina/lastfm%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_linkedin 	{ background: transparent url(images/icons/retina/linkedin%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_myspace 	{ background: transparent url(images/icons/retina/myspace%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_picasa 	{ background: transparent url(images/icons/retina/picasa%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_pinterest 	{ background: transparent url(images/icons/retina/pinterest%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_rss 		{ background: transparent url(images/icons/retina/rss%402x.png) no-repeat 0 0; 			}
+.theme_social_icons ul li a.tsm_skype 		{ background: transparent url(images/icons/retina/skype%402x.png) no-repeat 0 0; 			}
+.theme_social_icons ul li a.tsm_soundcloud { background: transparent url(images/icons/retina/soundcloud%402x.png) no-repeat 0 0; 	}
+.theme_social_icons ul li a.tsm_stumbleupon{ background: transparent url(images/icons/retina/stumbleupon%402x.png) no-repeat 0 0;	}
+.theme_social_icons ul li a.tsm_technorati { background: transparent url(images/icons/retina/technorati%402x.png) no-repeat 0 0; 	}
+.theme_social_icons ul li a.tsm_tumblr 	{ background: transparent url(images/icons/retina/tumblr%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_twitter 	{ background: transparent url(images/icons/retina/twitter%402x.png) no-repeat 0 0;		}
+.theme_social_icons ul li a.tsm_vimeo 		{ background: transparent url(images/icons/retina/vimeo%402x.png) no-repeat 0 0; 			}
+.theme_social_icons ul li a.tsm_windows 	{ background: transparent url(images/icons/retina/windows%402x.png) no-repeat 0 0;		}
+.theme_social_icons ul li a.tsm_wordpress 	{ background: transparent url(images/icons/retina/wordpress%402x.png) no-repeat 0 0; 		}
+.theme_social_icons ul li a.tsm_yahoo 		{ background: transparent url(images/icons/retina/yahoo%402x.png) no-repeat 0 0; 			}
+.theme_social_icons ul li a.tsm_youtube 	{ background: transparent url(images/icons/retina/youtube%402x.png) no-repeat 0 0;	 	}
+
+#footer .small_footer ul li { background:transparent url(images/backgrounds/retina/small-footer-link-divider%402x.png) no-repeat left 5px; background-size: 4px 11px;}
+	
+}

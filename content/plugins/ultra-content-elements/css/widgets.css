@@ -1,0 +1,125 @@
+/***************************************************************
+* Advertisment  *
+****************************************************************/
+
+.sidebar-advertise { clear:both; padding:9px 0 0 0; margin-bottom: 50px; }
+
+.sidebar-advertise  ul  { 	
+	border:none; 
+	margin:0 -15px 0 0; 
+	padding:0 }
+	
+.sidebar-advertise  ul li  { 
+	float:left; 
+	border:none; 
+	font-size: 0;
+	line-height: 0;
+	position:relative;
+	background:none; 	
+	clear:none;
+	margin:1px 1px 0 0;
+	padding:0;
+	width:125px;
+	height:125px;}
+
+.sidebar-advertise  ul li  a{ 	
+	width:auto;
+	padding:0;
+	background:none; 
+	margin:0;}	
+
+.sidebar-advertise  ul li a img { width:125px; height:125px; }
+
+/***************************************************************
+* Contact Form *
+****************************************************************/
+
+/*input*/
+.widgetFormInput,.widgetFormTextarea {	
+	float:left;
+	height:30px;
+	line-height:30px;	
+	margin:3px 0; }	
+
+.widgetFormTextarea:hover,.widgetFormInput:hover{ border-color:#ccc; }
+
+.widgetFormInput {width:80%; display:inline-block; float:right; }
+.widgetFormTextarea { height:100px; width:99.5% }	
+
+#contact-form-widget label {	
+	width:15%;
+	margin:3px 0;
+	font-weight: bold;
+	display:inline-block;
+	font-size:12px;
+	float:left;
+	line-height:29px;}
+	
+#contact-form-widget label.error,#contact-form-widget span.error { font-weight:normal;display:block; float:right; padding:0; margin:0; line-height:20px; color:#ce0000; clear:both;  text-align: right; width:auto; font-size: 12px; }
+
+/***************************************************************
+* Contact Info *
+****************************************************************/
+.contact_info { 
+	border:1px solid #e5e5e5; 
+	margin: 0 0 50px 0;
+	display:block;
+	padding:0  }
+	
+.contact_info p { padding:0; margin:0; display:inline; }
+.contact_info ul { padding:15px 0 12px 0; width:80%; border:none; margin:0 0 0 20px; padding:5px 0 10px 0;  }
+
+.contact_info ul li { 	
+	padding:0;
+	border:none;
+	background:none; 
+	margin:0; }
+
+.contact_info div.my_map p, div.my_map2 p { 
+	padding:0; 
+	margin:0;
+	border-bottom:1px solid #e5e5e5;
+	display:inline-block;
+	line-height: 0;
+	font-size: 0;
+	width:100%;  }
+
+.my_map iframe { width:100%; }
+
+.contact_info ul li p { padding:0; margin:0; width:auto; display:inline; }
+
+/***************************************************************
+* Categories *
+****************************************************************/
+
+ul.my_cat_items { margin-bottom:50px; }
+
+ul.my_cat_items a { text-decoration: none; }
+
+ul li.cat-item a small { padding:0 7px; display:block; float:right; background:#f2f2f2; border-radius: 3px;  }
+ul li.current-menu-item a,ul li.current-cat a small,ul li.current-cat:hover a small { font-weight: normal; }
+
+/***************************************************************
+* Recent Work *
+****************************************************************/
+
+.recent_work_widget ul { margin:0 0 30px 0; padding:0; border:none; }
+.recent_work_widget li {   
+	float:left;
+	list-style: none; 
+	border:none;	
+	line-height:0;
+	padding:0;
+	margin:0 5px 5px 0;
+	width:auto; }
+
+.recent_work_widget img{
+  float:left;
+  width:95px;
+  height:95px;
+  margin:0;
+  border:0px solid #ddd;
+  padding:0px;
+  border-radius: 0px; }
+
+
